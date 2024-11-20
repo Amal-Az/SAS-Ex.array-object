@@ -24,5 +24,11 @@ let num = [5, 1, 8, 4, 7]
 num.sort()
 console.log(num)
 // 6
-
+let list= [1, 2, 3, 4]
+let multiple= list.map(list => list *2)
+console.log(multiple)
+// 7
+let car= {make: "audi", model:"s6", year:2021, color:"black"}
+console.log("le nombre de propriétés est: "+ Object.keys(car).length)
+// 8
 
