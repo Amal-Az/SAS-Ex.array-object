@@ -31,4 +31,14 @@ console.log(multiple)
 let car= {make: "audi", model:"s6", year:2021, color:"black"}
 console.log("le nombre de propriétés est: "+ Object.keys(car).length)
 // 8
-
+let person={name: "amine",age:25, occupation:"salariée"}
+for (i in person){
+    console.log( i +": "+ person[i])
+}
+// 9
+let objet= [1, 2, 3, 4, 5] 
+if (objet.includes(3)){
+   console.log("oui il existe" )
+}
+// 10
+let personne ={name:"amina", age:9}
