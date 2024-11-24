@@ -114,3 +114,17 @@ LES FONCTIONS RESERVES AU STRING :
 . indexOf() : renvoie le numero d’index du premier mot selectionner dans une chaine 
 .replace(,) : Remplace une sous-chaîne par une autre dans la chaîne d'origine.
 .includes() : Vérifie si une sous-chaîne est présente dans la chaîne principale et elle renvoie true ou false.
+
+
+GIT / GITHUB :
+-GitHub : est une plateforme en ligne qui héberge des dépôts Git
+- Git : est un système de contrôle de version distribué, Il permet de suivre et de gérer les modifications apportées aux fichiers dans un projet au fil du temps.
+
+Afin de créer un nouveau repository, nous suivons les étapes suivantes :
+git init
+git add .
+git commit -m "documentation"
+git branch -M main
+git remote add origin « lien donnée »
+git push -u origin main
+
