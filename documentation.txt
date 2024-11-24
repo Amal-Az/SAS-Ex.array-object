@@ -1,0 +1,116 @@
+                                        JavaScript
+Les types de données sont:
+-Primitifs : Number, String, Boolean ...
+- Référentiels : arrays, object, Function... 
+ 
+ LES BOUCLES :
+Les boucles nous permettent d'exécuter un bloc de code plusieurs fois d’une façon répétitive tant que la condition qu’on lui a donnée est correcte.
+et elle existe différents types de boucles :
+    -For 
+for (initialisation; condition; incrémentation) { }
+son syntaxe est : 
+for (initialisation; condition; incrémentation) { }
+ //exemple : 
+   for (let i = 0; i < 5; i++) 
+   { console.log(i); // Affiche les nombres de 0 à 4 }
+
+    -While 
+while (condition) {  }
+    -Do…. while : est similaire à while, mais elle exécute d'abord le code au moins une fois, puis vérifie la condition.
+La boucle for...in est utilisée pour parcourir les propriétés d'un objet
+for (const clé in objet) { }
+//exemple :
+let personne = { nom: "Amina", age: 25 }; for (const clé in personne) { console.log(clé + ": " + personne[clé]); // Affiche "nom: Amina" et "age: 25" }
+   
+  -For…of :  est utilisée pour parcourir les éléments d'une collection itérable comme un tableau, une chaîne de caractères.
+Syntaxe :
+for (const élément of collection) { }
+
+
+LES FONCTIONS :
+Les fonctions nous permettent de réutiliser un code ou une tâche spécifique à chaque fois que nous en avons besoin.
+son syntaxe :
+function NomDeFonction(param1, param2) {  }
+ //exemple :
+function ajouter(a, b) 
+{   return a *  b
+} 
+console.log(ajouter(2, 4));
+
+
+LES CONDITIONS :
+Les conditions permettent d'exécuter d’un code uniquement si certaines conditions sont vraies en utilisant l’un des structures suivantes : if, else if, et else, swish case
+son syntaxe : 
+if (condition) { 
+} else { 
+}
+ //exemple :
+let age = 18; 
+if (age >= 18) {
+ console.log("Vous êtes majeur"); } 
+else { 
+console.log("Vous êtes mineur"); }
+
+*L'opérateur ternaire : est une syntaxe courte qui permet de réduire le nombre de lignes
+syntaxe :
+condition ? valeurSiVrai : valeurSiFaux;
+ //exemple :
+let age = 18; let message = age >= 18 ? "Vous êtes majeur" : "Vous êtes mineur";
+
+
+ARRAYS ET OBJECTS :
+Les arrays sont des listes ordonnées, tandis que les objects sont des paires de clé-valeur. 
+Syntaxe (Array) :
+let tableau = [valeur1, valeur2, ….];
+//exemple :
+let clothes= ["dress", "t-shirts", "skirt"] 
+console.log(clothes [0])
+
+Syntaxe (Object):
+let objet = { key: value, key2: value2 };
+//exemple :
+let country = { name: "morocco", city: marrakech }; 
+console.log(country.name);
+
+
+LES OPERATEURS ARITHMETIQUES : 
+ils sont utilisés pour effectuer des opérations mathématiques
+on a :
+-Addition
+-Soustraction
+-Multiplication
+-Division
+-Modulo (%) : 
+-Incrémentation : permet d’augmenter la valeur d'une variable de 1.et elle peut être placée avant ou après la variable.
+-décrémentation : permet de diminuer la valeur d'une variable de 1. Et elle peut aussi être placée avant ou après la variable.
+
+ 
+ Portée Globale : (VAR)
+Une variable lorsqu'elle est déclarée avec un VAR en dehors de toute fonction, est accessibles et modifiables partout dans le code
+-> Portée globale : accessible partout dans le code.
+//exemple :
+VAR message = "Bonjour, ladies"
+function saluer() { console.log(message); } 
+saluer();
+console.log(message); 
+=> Bonjour, ladies
+
+Portée Locale : (LET / CONST)
+Une variable lorsqu'elle est déclarée à l'intérieur d'une fonction ou d'un bloc (par ex : à l'intérieur d'un bloc if, for, ou dans une fonction). Les variables locales ne sont accessibles que dans la fonction ou le bloc où elles ont été définies.
+
+-> Portée locale : accessible seulement dans la fonction ou le bloc où la variable est déclarée.
+//exemple :
+ function saluer() { let message = "Bonjour ladies"; 
+console.log(message); // Accessible ici }
+saluer();  // Affiche "Bonjour ladies" 
+console.log(message);   // Erreur
+
+
+LES FONCTIONS RESERVES AU STRING :
+.length() : Renvoie la longueur de la chaîne.
+. toUpperCase() : Convertit toutes les caractères d'une chaîne en majuscules.
+. toLowerCase() : Convertit tous les caractères d'une chaîne en minuscules.
+. charAt() : Renvoie le caractère de index sélectionner.
+. indexOf() : renvoie le numero d’index du premier mot selectionner dans une chaine 
+.replace(,) : Remplace une sous-chaîne par une autre dans la chaîne d'origine.
+.includes() : Vérifie si une sous-chaîne est présente dans la chaîne principale et elle renvoie true ou false.

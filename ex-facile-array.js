@@ -34,3 +34,4 @@ console.log(car)
 let person= {nom:"Manal",age:25}
 let verif= "age" in person
 console.log(verif)
+

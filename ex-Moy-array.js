@@ -41,4 +41,4 @@ if (objet.includes(3)){
    console.log("oui il existe" )
 }
 // 10
-let personne ={name:"amina", age:9}
+let personne ={name:"amina" , age:9}
